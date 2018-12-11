@@ -66,6 +66,17 @@ $route['products'] = 'allproducts/index';
 #End Product#
 
 
+#Start ALL Benefit}
+
+$route['benefit/(:any)/(:any)/(:any)'] = 'benefit/view/$1/$1/$1';
+
+$route['benefit/(:any)/(:any)'] = 'benefit/index/$1/$1';
+
+$route['benefit/(:any)'] = 'benefit/index/$1';
+
+$route['benefit'] = 'benefit/index';
+
+#End Product#
 
 #Start ALL Product#
 
