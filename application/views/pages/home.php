@@ -155,54 +155,32 @@
 
               <div class="tab-content lightbox-gallery">
                   
-                <div class="s-6 m-6 l-4 padding">
-                <div class="image-with-hover-overlay margin-bottom border-articles-home">
-                  <div class="image-hover-overlay background-new"> 
-                    <div class="image-style-articles text-center">
-                     
-                    <div align=center><img src="<?php echo base_url(); ?>assets/img/img-02.jpg" ></div>
-                  
-                  <br>
-                      <h2 class="text-thin">Asuransi atau Investasi</h2> 
-                        <p>Apakah Anda sudah pernah mendengar Trend Paper Asset?</p> 
-                    </div> 
-                  </div> 
-                  <img src="<?php echo base_url(); ?>assets/img/portfolio/thumb-02.jpg" alt="" title="Portfolio Image 1" />
-                </div>  
-              </div>
-              <div class="s-6 m-6 l-4 padding">
-                <div class="image-with-hover-overlay margin-bottom border-articles-home">
-                  <div class="image-hover-overlay background-new"> 
-                    <div class="image-style-articles text-center">
-                     
-                    <div align=center><img src="<?php echo base_url(); ?>assets/img/img-02.jpg" ></div>
-                  
-                  <br>
-                      <h2 class="text-thin">Kenapa Ada Produk Asuransi Jiwa?</h2> 
-                        <p>Pertanyaan dasar dan prinsip penciptaan produk asuransi jiwa, adalah karena manusia punya ketakutan dan kekuatiran.</p>    
-                    </div> 
-                  </div> 
-                  <img src="<?php echo base_url(); ?>assets/img/portfolio/thumb-02.jpg" alt="" title="Portfolio Image 1" />
-                </div>  
-              </div>
-              <div class="s-6 m-6 l-4 padding">
-                <div class="image-with-hover-overlay margin-bottom border-articles-home">
-                  <div class="image-hover-overlay background-new"> 
-                    <div class="image-style-articles text-center">
-                     
-                    <div align=center><img src="<?php echo base_url(); ?>assets/img/img-02.jpg" ></div>
-                  
-                  <br>
-                      <h2 class="text-thin">Asal Usul Asuransi</h2> 
-                        <p>Asuransi (insurance) hanyalah istilah yang menurut sejarahnya, baru dipakai sekitar era abad ke-17.</p> 
-                    </div> 
-                  </div> 
-                  <img src="<?php echo base_url(); ?>assets/img/portfolio/thumb-02.jpg" alt="" title="Portfolio Image 1" />
-                </div>  
-              </div>
-              
+               
+              <?php foreach($latest_posts as $latest_post): ?>
+                 <div class="s-6 m-6 l-4 padding">
+                  <div class="image-with-hover-overlay margin-bottom border-articles-home">
+                    <div class="image-hover-overlay background-new"> 
+                      <div class="image-style-articles text-center">
+                       
+                      <div align=center><img src="http://bisnis.financialsecurity.id/assets/posts/<?=$latest_post['image'];?>" ></div>
+                    
+                    <br>
+                        <h2 class="text-thin"><?=$latest_post['title'];?></h2> 
+                          <p><?php echo substr($latest_post['body'],0,50); if(strlen($latest_post['body']) > 50 ){echo " ...";}else{}?></p> 
+                      
+                      </div> 
 
-            
+                    </div> 
+                    <img src="<?php echo base_url(); ?>assets/img/portfolio/thumb-02.jpg" alt="" title="Portfolio Image 1" />
+                  </div>  
+                </div>
+
+               
+              <?php endforeach ?>
+             <div class="s-12 m-12 l-12" style="margin-bottom:20px;">
+             <a href="<?php echo base_url(); ?>gallery"><img src="<?php echo base_url(); ?>assets/img/read.png" style="height:30px; width:100px; display: block;
+  margin-left: auto; margin-right: auto;"></a>
+            </div>
             </div>
 
       </section>

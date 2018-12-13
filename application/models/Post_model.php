@@ -48,6 +48,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		}
 
+		public function get_latest_post() {
+
+			$this->db->order_by('created_at', 'DESC');
+			$this->db->where( array('section' => 'p'));
+			$query = $this->db->get('posts', 3);
+			return $query->result_array();
+			
+		}
+
 		public function get_posts_search($slug = FALSE,$section) {
 
 			if($slug === FALSE) {

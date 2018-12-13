@@ -36,7 +36,8 @@ class Pages extends CI_Controller {
 		$data['mailnya'] = "sonnyarief@gmail.com";
 		$data['phone'] = "6281513967907";
 		$data['namanya'] = "Sonny Arief";
-		
+		$data['latest_posts'] = $this->Post_model->get_latest_post();
+
 		$this->load->view('templates/header');
 		$this->load->view('pages/'.$page, $data);
 		$this->load->view('templates/footer');
@@ -123,7 +124,7 @@ class Pages extends CI_Controller {
 				  Kota Jakarta Barat<br>
 				  Daerah Khusus Ibukota Jakarta 11470
                      ";
-		$data['url'] = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.7533965528414!2d112.73961441477486!3d-7.268879394753244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbdfa81b3385%3A0x1bb32063f92608d!2sGraha+Pacific%2C+Embong+Kaliasin%2C+Genteng%2C+Kota+SBY%2C+Jawa+Timur!5e0!3m2!1sen!2sid!4v1538140594356";
+		$data['latest_posts'] = $this->Post_model->get_latest_post();
 		
 		$this->load->view('templates/header', $data);
 		$this->load->view('pages/view_agent', $data);
