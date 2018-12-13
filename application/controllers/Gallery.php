@@ -30,7 +30,12 @@ class Gallery extends CI_Controller {
 		}
 
 		
-		$data['posts'] = $this->Post_model->get_posts($slug,$section);
+		if($this->input->post('search' == null))
+			$data['posts'] = $this->Post_model->get_posts($slug,$section);
+		else
+			$data['posts'] = $this->Post_model->get_posts_search($slug,$section);
+		
+		
 		//print_r($data['posts']);
 		$this->load->view('templates/header', $data);
 		$this->load->view('gallery/index',$data);
@@ -58,12 +63,12 @@ $data['phone'] = "6281513967907";
 				  Kota Jakarta Barat<br>
 				  Daerah Khusus Ibukota Jakarta 11470
                      ";
-			$data['posts'] = $this->Post_model->get_side_posts(); 
+			$data['posts'] = $this->Post_model->get_side_posts($section); 
 
 			$data['agent'] = $this->Agent_model->get_agent($this->uri->segment(2));
 		}else{
 			$data['agent'] = $this->Agent_model->get_agent($this->uri->segment(2));
-			$data['posts'] = $this->Post_model->get_side_posts(); 
+			$data['posts'] = $this->Post_model->get_side_posts($section); 
 
 			
 		}

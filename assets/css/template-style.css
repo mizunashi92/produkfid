@@ -2109,6 +2109,13 @@ video {
 
 }
 
+#list8 .input-search{
+  width:200px;
+  margin-left:20px;
+  margin-bottom:20px;
+  position:relative;
+}
+
 #list8 .head-list{
   background-color:#A5D9EC;
   width:200px;
