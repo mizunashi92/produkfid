@@ -161,9 +161,9 @@
                   <div class="image-with-hover-overlay margin-bottom border-articles-home">
                     <div class="image-hover-overlay background-new"> 
                       <div class="image-style-articles text-center">
-                       
+                       <a href="<?php echo base_url(); ?>gallery/view/<?=$latest_post['slug'];?>">
                       <div align=center><img src="http://bisnis.financialsecurity.id/assets/posts/<?=$latest_post['image'];?>" ></div>
-                    
+                    </a>
                     <br>
                         <h2 class="text-thin"><?=$latest_post['title'];?></h2> 
                           <p><?php echo substr($latest_post['body'],0,50); if(strlen($latest_post['body']) > 50 ){echo " ...";}else{}?></p> 
