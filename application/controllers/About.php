@@ -21,6 +21,7 @@ class About extends CI_Controller {
 		$data['personal'] = $this->Agent_model->get_personal($slug);
 		$data['profile'] = $this->Agent_model->get_profile($slug);
 		$data['t'] = $this->Post_model->get_posts(false,'t');
+		
 		$data['slug'] = "sonnyarief@gmail.com";
 		$data['phone'] = "0815-1396-7907";
 		$data['agent'] = $this->Agent_model->get_agent($this->uri->segment(2));

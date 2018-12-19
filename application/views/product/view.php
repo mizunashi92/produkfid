@@ -52,8 +52,6 @@
                     <li><a href="http://produk.financialsecurity.id/productpage<?=$ins?>/apk"><h4>Asuransi Penyakit Kritis</h4></a></li>
                     <li><a href="http://produk.financialsecurity.id/productpage<?=$ins?>/akl"><h4>Asuransi Keluarga Lengkap</h4></a></li>
                     <li><a href="http://produk.financialsecurity.id/productpage<?=$ins?>/as"><h4>Asuransi Syariah</h4></a></li>
-                    <li><a href="http://produk.financialsecurity.id/productpage<?=$ins?>/arj"><h4>Asuransi Rawat Jalan</h4></a></li>
-                    <li><a href="http://produk.financialsecurity.id/productpage<?=$ins?>/am"><h4>Asuransi Melahirkan</h4></a></li>
                     <li><a href="http://produk.financialsecurity.id/productpage<?=$ins?>/ap"><h4>Asuransi Pendidikan</h4></a></li>		 
 		</ul>
 

@@ -64,7 +64,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		}
 
 		public function get_personal($slug) {
-			$this->db->select('personal.id as id,title,slug,body,personal.image,created_by,created_at,name');
+			$this->db->select('personal.id as id,title,slug,body,personal.image,created_by,created_at,name,personal.url');
 			$this->db->order_by('personal.id', 'ASC');
 			$this->db->join('agents', 'agents.username = personal.created_by');
 			if(empty($this->session->userdata('username'))) {
