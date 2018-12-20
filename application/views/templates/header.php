@@ -160,6 +160,9 @@
                     if($slug1 == "about" AND $slug2 != "") {
                       $pages = base_url().$slug2;
 
+                    }elseif($slug1 == "about_allianz" AND $slug2 != "") {
+                      $pages = base_url().$slug2;
+
                     }elseif($slug1 == "contacts" AND $slug2 != "") {
                       $pages = base_url().$slug2;
 
@@ -193,7 +196,7 @@
                     }elseif($slug1 == "benefit" AND $slug2 != "" AND $slug3 == "") {
                       $pages = base_url();
 
-                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup") {
+                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "about_allianz" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup") {
                      $pages = base_url();
 
                     }else{
@@ -204,13 +207,16 @@
                   ">Home
                 </a>
             </li>
-                        <li><a>Products</a>
+            <li><a>Products</a>
               <ul>
                 <li><a href="<?php 
                   $slug1  = $this->uri->segment(1); 
                   $slug2  = $this->uri->segment(2); 
                   $slug3  = $this->uri->segment(3); 
                     if($slug1 == "about" AND $slug2 != "") {
+                     $pages = base_url()."productpage/".$slug2."/aj";
+
+                    }elseif($slug1 == "about_allianz" AND $slug2 != "") {
                      $pages = base_url()."productpage/".$slug2."/aj";
 
                     }elseif($slug1 == "products" AND $slug2 != "") {
@@ -246,7 +252,7 @@
                     }elseif($slug1 == "benefit" AND $slug2 != "" AND $slug3 == "") {
                       $pages = base_url()."productpage/aj";
 
-                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup" OR $slug1 == "") {
+                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "about_allianz" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup" OR $slug1 == "") {
                       $pages = base_url()."productpage/aj";
 
                     }else{
@@ -264,6 +270,9 @@
                     if($slug1 == "about" AND $slug2 != "") {
                      $pages = base_url()."productpage/".$slug2."/ak";
 
+                    }elseif($slug1 == "about_allianz" AND $slug2 != "") {
+                     $pages = base_url()."productpage/".$slug2."/ak";
+
                     }elseif($slug1 == "products" AND $slug2 != "") {
                      $pages = base_url()."productpage/".$slug2."/ak";
 
@@ -297,7 +306,7 @@
                     }elseif($slug1 == "benefit" AND $slug2 != "" AND $slug3 == "") {
                       $pages = base_url()."productpage/ak";
 
-                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup" OR $slug1 == "") {
+                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "about_allianz" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup" OR $slug1 == "") {
                       $pages = base_url()."productpage/ak";
 
                     }else{
@@ -314,6 +323,9 @@
                     if($slug1 == "about" AND $slug2 != "") {
                      $pages = base_url()."productpage/".$slug2."/apk";
 
+                    }elseif($slug1 == "about_allianz" AND $slug2 != "") {
+                     $pages = base_url()."productpage/".$slug2."/apk";
+
                     }elseif($slug1 == "products" AND $slug2 != "") {
                      $pages = base_url()."productpage/".$slug2."/apk";
 
@@ -347,7 +359,7 @@
                     }elseif($slug1 == "benefit" AND $slug2 != "" AND $slug3 == "") {
                       $pages = base_url()."productpage/apk";
 
-                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup" OR $slug1 == "") {
+                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "about_allianz" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup" OR $slug1 == "") {
                       $pages = base_url()."productpage/apk";
 
                     }else{
@@ -364,6 +376,9 @@
                     if($slug1 == "about" AND $slug2 != "") {
                      $pages = base_url()."productpage/".$slug2."/akl";
 
+                    }elseif($slug1 == "about_allianz" AND $slug2 != "") {
+                     $pages = base_url()."productpage/".$slug2."/akl";
+
                     }elseif($slug1 == "products" AND $slug2 != "") {
                      $pages = base_url()."productpage/".$slug2."/akl";
 
@@ -397,7 +412,7 @@
                     }elseif($slug1 == "benefit" AND $slug2 != "" AND $slug3 == "") {
                       $pages = base_url()."productpage/akl";
 
-                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup" OR $slug1 == "") {
+                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "about_allianz" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup" OR $slug1 == "") {
                       $pages = base_url()."productpage/akl";
 
                     }else{
@@ -413,6 +428,9 @@
                     if($slug1 == "about" AND $slug2 != "") {
                      $pages = base_url()."productpage/".$slug2."/as";
 
+                    }elseif($slug1 == "about_allianz" AND $slug2 != "") {
+                     $pages = base_url()."productpage/".$slug2."/as";
+
                     }elseif($slug1 == "products" AND $slug2 != "") {
                      $pages = base_url()."productpage/".$slug2."/as";
 
@@ -446,7 +464,7 @@
                     }elseif($slug1 == "benefit" AND $slug2 != "" AND $slug3 == "") {
                       $pages = base_url()."productpage/as";
 
-                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup" OR $slug1 == "") {
+                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "about_allianz" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup" OR $slug1 == "") {
                       $pages = base_url()."productpage/as";
 
                     }else{
@@ -463,6 +481,9 @@
                     if($slug1 == "about" AND $slug2 != "") {
                      $pages = base_url()."productpage/".$slug2."/ap";
 
+                    }elseif($slug1 == "about_allianz" AND $slug2 != "") {
+                     $pages = base_url()."productpage/".$slug2."/ap";
+
                     }elseif($slug1 == "products" AND $slug2 != "") {
                      $pages = base_url()."productpage/".$slug2."/ap";
 
@@ -496,7 +517,7 @@
                     }elseif($slug1 == "benefit" AND $slug2 != "" AND $slug3 == "") {
                       $pages = base_url()."productpage/ap";
 
-                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup" OR $slug1 == "") {
+                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "about_allianz" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup" OR $slug1 == "") {
                       $pages = base_url()."productpage/ap";
 
                     }else{
@@ -516,6 +537,9 @@
                     if($slug1 == "about" AND $slug2 != "") {
                      $pages = base_url()."benefit/".$slug2."/k";
 
+                    }elseif($slug1 == "about_allianz" AND $slug2 != "") {
+                     $pages = base_url()."benefit/".$slug2."/k";
+
                     }elseif($slug1 == "products" AND $slug2 != "") {
                      $pages = base_url()."benefit/".$slug2."/k";
 
@@ -549,7 +573,7 @@
                     }elseif($slug1 == "benefit" AND $slug2 != "" AND $slug3 == "") {
                       $pages = base_url()."benefit/k";
 
-                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup" OR $slug1 == "") {
+                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "about_allianz" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup" OR $slug1 == "") {
                       $pages = base_url()."benefit/k";
 
                     }else{
@@ -567,6 +591,9 @@
                     if($slug1 == "about" AND $slug2 != "") {
                      $pages = base_url()."benefit/".$slug2."/f";
 
+                    }elseif($slug1 == "about_allianz" AND $slug2 != "") {
+                     $pages = base_url()."benefit/".$slug2."/f";
+
                     }elseif($slug1 == "products" AND $slug2 != "") {
                      $pages = base_url()."benefit/".$slug2."/f";
 
@@ -600,7 +627,7 @@
                     }elseif($slug1 == "benefit" AND $slug2 != "" AND $slug3 == "") {
                       $pages = base_url()."benefit/f";
 
-                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup" OR $slug1 == "") {
+                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "about_allianz" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup" OR $slug1 == "") {
                       $pages = base_url()."benefit/f";
 
                     }else{
@@ -611,13 +638,19 @@
                 Fakta Klaim</a></li>
                 </ul>
                 </li>
-             <li>
-              <a href="
-                <?php 
+              <li><a>About</a>
+              <ul>
+                <li><a href="<?php 
                   $slug1  = $this->uri->segment(1); 
                   $slug2  = $this->uri->segment(2); 
                     
-                   if($slug1 == "about" AND $slug2 != "") {
+                    if($slug1 == "about" AND $slug2 != "") {
+                      $pages = base_url()."about/".$slug2;
+
+                    }elseif($slug1 == "about_allianz" AND $slug2 != "") {
+                      $pages = base_url()."about/".$slug2;
+
+                    }elseif($slug1 == "about_univision" AND $slug2 != "") {
                       $pages = base_url()."about/".$slug2;
 
                     }elseif($slug1 == "products" AND $slug2 != "") {
@@ -653,21 +686,79 @@
                     }elseif($slug1 == "benefit" AND $slug2 != "" AND $slug3 == "") {
                       $pages = base_url()."about";
 
-                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup") {
+                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "about_allianz" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup") {
                       $pages = base_url()."about";
                     }else{
                       $pages = base_url()."about/".$slug1;
                     }
                     echo $pages;
-                  ?>
-                ">About
-              </a>
+                  ?>">
+                  
+                About Me</a></li>
+                <li>
+                  <a href="<?php 
+                  $slug1  = $this->uri->segment(1); 
+                  $slug2  = $this->uri->segment(2); 
+                    
+                   if($slug1 == "about" AND $slug2 != "") {
+                      $pages = base_url()."about_allianz/".$slug2;
+
+                    }elseif($slug1 == "about_allianz" AND $slug2 != "") {
+                      $pages = base_url()."about_allianz/".$slug2;
+
+                    }elseif($slug1 == "products" AND $slug2 != "") {
+                      $pages = base_url()."about_allianz/".$slug2;
+
+                    }elseif($slug1 == "sdetail" AND $slug2 != "") {
+                      $pages = base_url()."about_allianz/".$slug2;
+
+                    }elseif($slug1 == "gallery" AND $slug2 == "view") {
+                       $pages = base_url()."about_allianz";
+
+                    }elseif($slug1 == "contacts" AND $slug2 != "") {
+                      $pages = base_url()."about_allianz/".$slug2;
+
+                    }elseif($slug1 == "gallery" AND $slug2 != "") {
+                      $pages = base_url()."about_allianz/".$slug2;
+
+                    }elseif($slug1 == "productpage" AND $slug2 == "view") {
+                        $pages = base_url()."about_allianz/".$slug2;
+
+                    }elseif($slug1 == "productpage" AND $slug2 != "" AND $slug3 != "") {
+                      $pages = base_url()."about_allianz/".$slug2;
+
+                    }elseif($slug1 == "productpage" AND $slug2 != "" AND $slug3 == "") {
+                      $pages = base_url()."about_allianz";
+
+                    }elseif($slug1 == "benefit" AND $slug2 == "view") {
+                        $pages = base_url()."about_allianz/".$slug2;
+
+                    }elseif($slug1 == "benefit" AND $slug2 != "" AND $slug3 != "") {
+                      $pages = base_url()."about_allianz/".$slug2;
+
+                    }elseif($slug1 == "benefit" AND $slug2 != "" AND $slug3 == "") {
+                      $pages = base_url()."about_allianz";
+
+                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "about_allianz" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup") {
+                      $pages = base_url()."about_allianz";
+                    }else{
+                      $pages = base_url()."about_allianz/".$slug1;
+                    }
+                    echo $pages;
+                  ?>">
+                About Allianz</a></li>
+              </ul>
             </li>
-           <li><a href="
+             
+            <li>
+              <a href="
                 <?php 
                   $slug1  = $this->uri->segment(1); 
                   $slug2  = $this->uri->segment(2); 
                     if($slug1 == "about" AND $slug2 != "") {
+                      $pages = base_url()."gallery/".$slug2;
+
+                    }elseif($slug1 == "about_allianz" AND $slug2 != "") {
                       $pages = base_url()."gallery/".$slug2;
 
                     }elseif($slug1 == "contacts" AND $slug2 != "") {
@@ -706,7 +797,7 @@
                     }elseif($slug1 == "benefit" AND $slug2 != "" AND $slug3 == "") {
                       $pages = base_url()."gallery";
 
-                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup") {
+                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "about_allianz" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup") {
                      $pages = base_url()."gallery";
 
                     }else{
@@ -721,6 +812,9 @@
                   $slug2  = $this->uri->segment(2); 
                     if($slug1 == "about" AND $slug2 != "") {
                       $pages = base_url()."contacts/".$slug2;
+
+                    }elseif($slug1 == "about_allianz" AND $slug2 != "") {
+                       $pages = base_url()."contacts/".$slug2;
 
                     }elseif($slug1 == "gallery" AND $slug2 == "view") {
                        $pages = base_url()."contacts";
@@ -755,7 +849,7 @@
                     }elseif($slug1 == "benefit" AND $slug2 != "" AND $slug3 == "") {
                       $pages = base_url()."contacts";
 
-                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup") {
+                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "about_allianz" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup") {
                      $pages = base_url()."contacts";
 
                     }else{
@@ -774,6 +868,9 @@
                   $slug2  = $this->uri->segment(2); 
                     if($slug1 == "about" AND $slug2 != "") {
                       $pages = "http://bisnis.financialsecurity.id/".$slug2;
+
+                    }elseif($slug1 == "about_allianz" AND $slug2 != "") {
+                       $pages = "http://bisnis.financialsecurity.id/";
 
                     }elseif($slug1 == "productpage" AND $slug2 != "") {
                        $pages = "http://bisnis.financialsecurity.id/";
@@ -808,7 +905,7 @@
                     }elseif($slug1 == "story" AND $slug2 != "" AND $slug3 == "") {
                       $pages = "http://bisnis.financialsecurity.id/";
 
-                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup") {
+                    }elseif($slug1 == "contacts" OR $slug1 == "sdetail" OR $slug1 == "products" OR $slug1 == "gallery" OR $slug1 == "about" OR $slug1 == "about_allianz" OR $slug1 == "forgot" OR $slug1 == "signin" OR $slug1 == "signup") {
                      $pages = "http://bisnis.financialsecurity.id/";
 
                     }else{

@@ -116,10 +116,10 @@ $route['gallery'] = 'gallery/index';
 
 #Start About#
 
+$route['about_allianz/(:any)'] = 'about/get_allianz/$1'; 
 $route['about/(:any)'] = 'about/index/$1'; // Replica About
 
 #End About#
-
 
 
 #Start Home#
